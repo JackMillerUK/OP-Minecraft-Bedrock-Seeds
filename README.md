@@ -5,4 +5,6 @@ To use this program I made, run it in compatible software then if it asked to cr
 
 This program comes with reloaded seeds and also it has the ability for you to save your own seeds to it.
 
+When trying to add seeds from a deifferent device, you HAVE to click import, saving manually doesn't work. :D
+
 To see all previous versions, go to releases or go to: https://github.com/JackMillerUK/OP-Minecraft-Bedrock-Seeds/releases
