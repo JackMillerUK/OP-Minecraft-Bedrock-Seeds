@@ -5,6 +5,14 @@ To use this program I made, run it in compatible software then if it asked to cr
 
 This program comes with reloaded seeds and also it has the ability for you to save your own seeds to it.
 
-When trying to add seeds from a deifferent device, you HAVE to click import, saving manually doesn't work. :D
+When trying to add seeds from a deifferent device, you HAVE to click import, saving manually doesn't work. 😄
 
 To see all previous versions, go to releases or go to: https://github.com/JackMillerUK/OP-Minecraft-Bedrock-Seeds/releases
+
+PLEASE DO NOT COPY THIS CODE IN ANY WAY WITHOUT TAGGING OR ACKNOWLEDGING ME!
+
+THIS SOFTWARE CAN BE USED AND ALSO SCREENSHOTTING/SCREEN RECORDED AS LONG AS I AM ACKNOWLEDGED!
+
+Thanks and have fun using these cool seeds! 😄
+
+Make sure to add this repository to your starred and watch list so you know when I add more OP seeds to the program/fix bugs! 😄
