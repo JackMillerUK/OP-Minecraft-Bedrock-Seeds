@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seed Scout — Minecraft Seed Vault (Koder compatible)</title>
+  <meta name="theme-color" content="#0b5ad9" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>Seed Scout</h1>
+      <div class="meta" style="margin-left:auto; color:var(--muted)">Koder export fix build</div>
+    </div>
+
+    <div class="toolbar" role="region" aria-label="Filters and actions">
+      <input id="q" type="search" placeholder="Search seeds & descriptions…" aria-label="Search seeds and descriptions" />
+      <select id="versionFilter" aria-label="Filter by version">
+        <option value="">All versions</option>
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+        <option value="seed-asc">Seed A → Z</option>
+        <option value="seed-desc">Seed Z → A</option>
+      </select>
+      <button id="exportBtn" class="btn secondary" title="Export JSON">Export</button>
+      <label class="btn secondary" for="importFile" title="Import JSON" style="display:inline-flex; align-items:center; gap:8px; padding:10px 14px; cursor:pointer">
+        Import <input id="importFile" type="file" accept="application/json" hidden />
+      </label>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card" aria-labelledby="addSeedTitle">
+    <h2 id="addSeedTitle" style="margin:0 0 10px">Add a seed</h2>
+    <form id="seedForm" class="seed-form" autocomplete="off">
+      <input id="seedInput" type="text" inputmode="numeric" placeholder="Seed number (or text)" aria-label="Seed" required />
+      <input id="descInput" type="text" placeholder="Description (biome, structures, notes…)" aria-label="Description" />
+      <input id="verInput" type="text" placeholder="Minecraft version (e.g. 1.21.1 Bedrock)" aria-label="Version" required />
+      <button class="btn" type="submit">Add</button>
+    </form>
+    <div id="formHelp" class="meta" style="margin-top:8px; color:var(--muted)">
+      Tip: If export doesn't download, we'll show the JSON in a panel you can copy or share.
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="listTitle">
+    <div class="row" style="justify-content:space-between; margin-bottom:4px">
+      <h2 id="listTitle" style="margin:0">Your seeds</h2>
+      <div id="count" class="meta"></div>
+    </div>
+    <div id="list" class="grid" role="list"></div>
+    <div id="empty" class="empty" hidden>No seeds yet—add your first one above!</div>
+  </section>
+
+  <section id="exportPanel" class="card" style="display:none">
+    <div class="row" style="justify-content:space-between; align-items:center">
+      <h2 style="margin:0">Export JSON (fallback)</h2>
+      <div class="row">
+        <button id="copyJsonBtn" class="btn secondary">Copy JSON</button>
+        <button id="shareJsonBtn" class="btn secondary">Share JSON</button>
+        <button id="closeExportPanel" class="btn danger">Close</button>
+      </div>
+    </div>
+    <textarea id="exportText" style="width:100%; height:220px; margin-top:10px; background:#0d1117; color:#e6edf3; border:1px solid var(--border); border-radius:10px; padding:10px" spellcheck="false"></textarea>
+    <div class="meta" style="margin-top:8px">If download is blocked in Koder, copy or share this JSON. You can import it later.</div>
+  </section>
+</main>
+
+<footer class="container">
+  <div>Data is stored locally in your browser. Export JSON regularly to back up.</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

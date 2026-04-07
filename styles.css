@@ -1,0 +1,56 @@
+/* same styles as previous build */
+
+:root{
+  --bg:#0f1115;
+  --panel:#171a20;
+  --panel-2:#1d222b;
+  --text:#e8eaed;
+  --muted:#b6bcc6;
+  --accent:#0b5ad9;
+  --accent-2:#3081ff;
+  --danger:#ff4d4f;
+  --ok:#2ecc71;
+  --border:#2a303a;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg, #0e131b, #0b0d12);
+  color:var(--text);
+  font: 15px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+header{
+  position:sticky; top:0; z-index:10;
+  backdrop-filter:saturate(1.2) blur(8px);
+  background:color-mix(in srgb, #0e131b 72%, transparent);
+  border-bottom:1px solid var(--border);
+}
+.container{max-width:980px; margin:0 auto; padding:16px}
+.brand{display:flex; align-items:center; gap:10px; margin:4px 0 10px}
+.logo{width:28px; height:28px; border-radius:8px; background: conic-gradient(from 210deg, #1d8fff, #00ffd1, #1d8fff); box-shadow:0 0 0 2px #0b0d12 inset, 0 0 24px rgba(29,143,255,.25)}
+h1{font-size:18px; margin:0}
+.toolbar{display:grid; gap:10px; grid-template-columns: 1fr 1fr 1fr auto auto}
+.toolbar > *{min-width:0}
+input[type="search"], select, .btn, input[type="text"]{width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--panel); color:var(--text); outline:none}
+input::placeholder{color:#8e97a3}
+.btn{background:linear-gradient(180deg, var(--accent), var(--accent-2)); border:none; color:white; font-weight:600; cursor:pointer}
+.btn.secondary{ background:var(--panel-2); border:1px solid var(--border); color:var(--text)}
+.btn.danger{ background:linear-gradient(180deg, #ff6a6a, #ff3b3b)}
+.btn:disabled{opacity:.6; cursor:not-allowed}
+main .card{background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:14px; margin:12px 0}
+.grid{display:grid; gap:12px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))}
+.seed{background:var(--panel-2); border:1px solid var(--border); border-radius:12px; padding:12px; display:flex; flex-direction:column; gap:10px}
+.row{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.row.gap12{gap:12px}
+.seed .meta{font-size:12px; color:var(--muted)}
+.chip{display:inline-flex; align-items:center; gap:6px; background:#0f1520; border:1px solid var(--border); padding:4px 8px; border-radius:999px; color:#cfe1ff}
+.seed .actions{display:flex; gap:8px; margin-left:auto}
+.seed .desc{color:#d9dee7}
+.kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; background:#0d1117; padding:2px 6px; border-radius:6px; border:1px solid var(--border)}
+form.seed-form{display:grid; gap:10px; grid-template-columns: 2fr 3fr 1.2fr auto}
+form.seed-form input, form.seed-form select{height:42px}
+.empty{text-align:center; color:var(--muted); padding:28px 12px; border:1px dashed var(--border); border-radius:12px}
+footer{padding:30px 0; color:var(--muted); font-size:13px}
+@media (max-width:780px){.toolbar{grid-template-columns: 1fr 1fr auto; grid-auto-rows: auto}.hide-sm{display:none}form.seed-form{grid-template-columns: 1fr}}
