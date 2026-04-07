@@ -4,3 +4,5 @@ I found loads of OP Minecraft seeds so i thought: Why not store it somewhere-so 
 To use this program I made, run it in compatible software then if it asked to create a “.json” file, allow it.
 
 This program comes with reloaded seeds and also it has the ability for you to save your own seeds to it.
+
+To see all previous versions, go to releases or go to: https://github.com/JackMillerUK/OP-Minecraft-Bedrock-Seeds/releases
