@@ -3,9 +3,9 @@ I found loads of OP Minecraft seeds so i thought: Why not store it somewhere-so 
 
 To use this program I made, run it in compatible software that runs HTML, CSS and JavaScript files then run the html file. If it asks to create a “.json” file, allow it.
 
-This program comes with reloaded seeds and also it has the ability for you to save your own seeds to it.
+This program comes with preloaded seeds and also it has the ability for you to save your own seeds to it.
 
-When trying to add seeds from a deifferent device, you HAVE to click import, saving manually doesn't work. 😄
+When trying to add seeds from a different device, you HAVE to click import, saving manually doesn't work. 😄
 
 To see all previous versions, go to releases or go to: https://github.com/JackMillerUK/OP-Minecraft-Bedrock-Seeds/releases
 
